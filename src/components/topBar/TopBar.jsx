@@ -34,7 +34,9 @@ export default function TopBar() {
         <div className="topRight">
           {
           user ? (
-            <img className='topImg' src="https://media.licdn.com/dms/image/D5603AQFizZ5IejkklQ/profile-displayphoto-shrink_800_800/0/1675497382824?e=1687996800&v=beta&t=41UViiNfa2wk85E_DWGjq_I2iLX05aDDljxz2cItxrM" alt="" />
+            <Link to={'/settings'}>
+              <img className='topImg' src="https://media.licdn.com/dms/image/D5603AQFizZ5IejkklQ/profile-displayphoto-shrink_800_800/0/1675497382824?e=1687996800&v=beta&t=41UViiNfa2wk85E_DWGjq_I2iLX05aDDljxz2cItxrM" alt="" />
+            </Link>
           ) : (
             <ul className='topList'>
               <li className='topListItem'>
